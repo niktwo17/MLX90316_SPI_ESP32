@@ -42,7 +42,7 @@
 
 
 
-/// In Radians
+/// In Radians, used for isNeutral() function
 #define ANGLELOCKTOLERANCEABS 0.05
 
 /// Only needed if conversion should be done here
@@ -64,7 +64,6 @@
 #define MOSIMLX 2
 #define SCKMLX 16
 #define SSMLX 17
-
 
 
 class MLX : public SPIClass {

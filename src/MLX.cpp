@@ -1,6 +1,6 @@
 /*
  * Copyright (c) 2014, Majenko Technologies
- * Adapted for the MLX90316 by niktwo17, 2020
+ * Adapted for the MLX90316 by niktwo17, 2021
  * All rights reserved.
  * 
  * Redistribution and use in source and binary forms, with or without modification, 
@@ -249,14 +249,14 @@ float MLX::getAngle()
         else
         {
             Debugln("Bit error");
-            return -1;
+            return -10;
         }
         
     }
     else
     {
         Debugln("Encoder in errorMode");
-        return -2;
+        return -20;
     }
     
 delayMicroseconds(80);

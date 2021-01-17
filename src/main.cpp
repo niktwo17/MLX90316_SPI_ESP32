@@ -11,6 +11,7 @@ void setup()
 
 void loop() 
 {
+  // -10 value is bit error, -20 means no value received from sensor
   float readRadians = encoder.getAngle();
   Serial.println(readRadians);
   delay(1000);
